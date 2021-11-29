@@ -1,0 +1,10 @@
+﻿https://www.thecodebuzz.com/efcore-scaffold-dbcontext-commands-orm-net-core/
+Install-Package Pomelo.EntityFrameworkCore.MySql -Version 6.0.0
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.EntityFrameworkCore.Design
+
+Scaffold-DbContext "Server=127.0.0.1;Port=3306;Uid=root;Password=ClickNext!1234;Database=sakila" Pomelo.EntityFrameworkCore.MySql  -OutputDir Models -ContextDir Context -Context ExampleDbContext
+
+Scaffold-DbContext "Server=127.0.0.1;Port=3306;Uid=root;Password=ClickNext!1234;Database=sakila" Pomelo.EntityFrameworkCore.MySql  -OutputDir DataBase/Models -ContextDir DataBase/Context -Context ExampleDbContext
+
+Scaffold-DbContext "Server=127.0.0.1;Port=3306;Uid=root;Password=ClickNext!1234;Database=sakila" Pomelo.EntityFrameworkCore.MySql  -OutputDir DataBase/Models -ContextDir DataBase/Context -Context ExampleDbContext -UseDatabaseNames 
